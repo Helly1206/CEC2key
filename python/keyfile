@@ -1,0 +1,29 @@
+CEC_KEYCODE_POWER_OFF_FUNCTION      KEY_NONE            #power off not implemented
+CEC_KEYCODE_POWER_ON_FUNCTION       g                   #key not implemented, use to trigger power
+CEC_KEYCODE_NUMBER_0_OR_NUMBER_10   0
+CEC_KEYCODE_NUMBERS_1               1
+CEC_KEYCODE_NUMBERS_2               2
+CEC_KEYCODE_NUMBERS_3               3
+CEC_KEYCODE_NUMBERS_4               4
+CEC_KEYCODE_NUMBERS_5               5
+CEC_KEYCODE_NUMBERS_6               6
+CEC_KEYCODE_NUMBERS_7               7
+CEC_KEYCODE_NUMBERS_8               8
+CEC_KEYCODE_NUMBERS_9               9
+CEC_KEYCODE_SELECT                  KEY_RETURN          #select/ enter
+CEC_KEYCODE_UP                      KEY_UP_ARROW
+CEC_KEYCODE_DOWN                    KEY_DOWN_ARROW
+CEC_KEYCODE_LEFT                    KEY_LEFT_ARROW
+CEC_KEYCODE_RIGHT                   KEY_RIGHT_ARROW
+CEC_KEYCODE_EXIT                    KEY_BACKSPACE       #go back
+CEC_KEYCODE_F1_BLUE                 KEY_ESC             #go to home screen
+CEC_KEYCODE_F2_RED                  KEY_DELETE          #delete file
+CEC_KEYCODE_F3_GREEN                c                   #contextual menu
+CEC_KEYCODE_F4_YELLOW               i                   #info (or is this Z)
+CEC_KEYCODE_PLAY                    p
+CEC_KEYCODE_STOP                    x
+CEC_KEYCODE_PAUSE                   KEY_SPACE
+CEC_KEYCODE_REWIND                  r
+CEC_KEYCODE_FAST_FORWARD            f
+CEC_KEYCODE_FORWARD                 .                   #skip forward
+CEC_KEYCODE_BACKWARD                ,                   #skip backward
