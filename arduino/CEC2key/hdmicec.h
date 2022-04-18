@@ -20,9 +20,10 @@
 #define CEC_KEYCODE_POWER_OFF_FUNCTION 0x6C
 #define CEC_KEYCODE_POWER_ON_FUNCTION  0x6D
 
-#define POWER_DISABLED 0
-#define POWER_POWER    1
-#define POWER_FOCUS    2
+#define POWER_DISABLED     0
+#define POWER_POWER        1
+#define POWER_FOCUS        2
+#define POWER_FOCUS_ALWAYS 3
 
 class Chdmicec {
 public:

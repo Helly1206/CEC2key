@@ -119,11 +119,11 @@ bool Ckeymap::setOSDName(char *OSDname) {
 byte Ckeymap::getPowerOn() {
   byte state = 0;
   EEPROM.get(A_POWERON, state);
-  return ((state < 0) || (state > 2)) ? 0 : state;
+  return ((state < 0) || (state > 3)) ? 0 : state;
 }
 
 bool Ckeymap::setPowerOn(byte state) {
-  if ((state < 0) || (state > 2)) {
+  if ((state < 0) || (state > 3)) {
     return false;
   }
   EEPROM.put(A_POWERON, state);
@@ -133,11 +133,11 @@ bool Ckeymap::setPowerOn(byte state) {
 byte Ckeymap::getPowerStandby() {
   byte state = 0;
   EEPROM.get(A_POWERSTDBY, state);
-  return ((state < 0) || (state > 2)) ? 0 : state;
+  return ((state < 0) || (state > 3)) ? 0 : state;
 }
 
 bool Ckeymap::setPowerStandby(byte state) {
-    if ((state < 0) || (state > 2)) {
+    if ((state < 0) || (state > 3)) {
     return false;
   }
   EEPROM.put(A_POWERSTDBY, state);

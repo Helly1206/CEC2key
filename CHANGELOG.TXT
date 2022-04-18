@@ -1,2 +1,5 @@
+[B]0.8.1[/B]
+- Added allfocus power option to power on or off every time the device is selected
+
 [B]0.8.0[/B]
 - Initial release

@@ -99,9 +99,9 @@ void Ccontrol::help() {
   Serial.println("gla      = get logical address");
   Serial.println("sn>aaaa  = set OSD name (string aaaa)");
   Serial.println("gn       = get OSD name");
-  Serial.println("spo>n    = set power on state (n 0=none, 1=power, 2=focus)");
+  Serial.println("spo>n    = set power on state (n 0=none, 1=power, 2=focus, 3=allfocus)");
   Serial.println("gpo      = get power on state");
-  Serial.println("sps>n    = set power standby state (n 0=none, 1=power, 2=focus)");
+  Serial.println("sps>n    = set power standby state (n 0=none, 1=power, 2=focus, 3=allfocus)");
   Serial.println("gps      = get power standby state");
   Serial.println("sk>xx:yy = set key code (xx:yy in hex)");
   Serial.println("gk       = get key codes");

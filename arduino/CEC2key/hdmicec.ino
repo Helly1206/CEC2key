@@ -249,11 +249,11 @@ void Chdmicec::DbgTransmit(int source, int dest, unsigned char* buffer, int coun
 }
 
 void Chdmicec::powerOn(bool onPower, int dest) {
-    if (power) {
+  byte ps = keymap.getPowerOn();
+  if ((power) && (ps != POWER_FOCUS_ALWAYS)) {
     return;
   }
   
-  byte ps = keymap.getPowerOn();
   if (onPower) {
     if (ps != POWER_POWER) {
       if (ps == POWER_DISABLED) { // switch power status, even if disabled 
@@ -262,7 +262,7 @@ void Chdmicec::powerOn(bool onPower, int dest) {
       return;
     }
   } else {
-    if (ps != POWER_FOCUS) {
+    if ((ps != POWER_FOCUS) && (ps != POWER_FOCUS_ALWAYS)) {
       return;
     }
   }
@@ -277,11 +277,11 @@ void Chdmicec::powerOn(bool onPower, int dest) {
 }
 
 void Chdmicec::powerStandby(bool onPower, int dest) {
-  if (!power) {
+  byte ps = keymap.getPowerStandby();
+  if ((!power) && (ps != POWER_FOCUS_ALWAYS)) {
     return;
   }
   
-  byte ps = keymap.getPowerStandby();
   if (onPower) {
     if (ps != POWER_POWER) {
       if (ps == POWER_DISABLED) { // switch power status, even if disabled 
@@ -290,7 +290,7 @@ void Chdmicec::powerStandby(bool onPower, int dest) {
       return;
     }
   } else {
-    if (ps != POWER_FOCUS) {
+    if ((ps != POWER_FOCUS) && (ps != POWER_FOCUS_ALWAYS)) {
       return;
     }
   }

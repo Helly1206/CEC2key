@@ -2,7 +2,7 @@
  * CEC2key - CEC2key
  * HDMI CEC to keyboard control
  * Hardware: Sparkfun Pro Micro
- * Version 0.80
+ * Version 0.81
  * 6-2-2022
  * Copyright: Ivo Helwegen
  */

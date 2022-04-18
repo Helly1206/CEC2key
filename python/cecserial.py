@@ -209,7 +209,7 @@ class cecserial(object):
         exit(0 if result else 1)
 
     def handleArgs(self, argv):
-        print("CECserial: serial connection to arduino CEC2key v0.8")
+        print("CECserial: serial connection to arduino CEC2key v0.81")
         aind = 1
         self.settings["port"] = "/dev/ttyACM0"
         self.settings["baudrate"] = 115200
@@ -321,8 +321,8 @@ class cecserial(object):
         print("    -c: clear keys before loading new key codes")
         print("    -n: set OSD name [-n name]")
         print("    -a: set physical address (HDMI port) [-a n-n-n-n]")
-        print("    -o: set power on state ([d]isabled, [p]ower, [f]ocus)")
-        print("    -t: set power standby state ([d]isabled, [p]ower, [f]ocus)")
+        print("    -o: set power on state ([d]isabled, [p]ower, [f]ocus), [a]llfocus")
+        print("    -t: set power standby state ([d]isabled, [p]ower, [f]ocus), [a]llfocus")
         print("    -m: enter terminal mode, monitor cec commands")
         print("    -l: enter terminal mode, monitor cec commands, don't send key commands")
         print("    -s: enter terminal mode, simulate key commands")
@@ -490,6 +490,8 @@ class cecserial(object):
             state = 1
         elif statevar[0].lower() == "f":
             state = 2
+        elif statevar[0].lower() == "a":
+            state = 3
         return state
 
     def processLine(self, line):
